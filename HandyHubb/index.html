@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Handy Hubb</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">   -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script src="https://kit.fontawesome.com/8d09653a5b.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles-main-css.css">
+        <link rel="stylesheet" href="styles-mediaq.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <header class="header">
+                <div class="header-container">
+                    <img class="logo" src="elements\logo2.png" alt="logo"  height="45px">
+                    <nav class="navigation-web">
+                        <div class="link text-link"><a class="gradient">Claim Business</a></div>
+                        <div class="link text-link"><a class="gradient">About</a></div>
+                        <div class="link text-link"><a class="gradient">Blogs</a></div>
+                        <div class="link text-link"><a class="gradient">Contact</a></div>
+                        <div class="link "><img class="gradient" src="elements\search.png" alt="searchbutton" width="25px" ></div>
+                        <div class="link button-log"><button>Login</button></div>
+                    </nav>    
+                    <span  class="menu-open" onclick="openmenu()"><i class="fa-solid fa-bars"></i></span>   
+                </div>
+               
+                
+                <nav class="navigation-mobile" id="navigation-mob" >
+                    <span  class="menu-close" onclick="closemenu()"><i class="fa-solid fa-xmark"></i></span>
+                    <div class="link text-link" onclick="closemenu()"><a>Claim Business</a></div>
+                    <div class="link text-link" onclick="closemenu()"><a>About</a></div>
+                    <div class="link text-link" onclick="closemenu()"><a>Blogs</a></div>
+                    <div class="link text-link" onclick="closemenu()"><a>Contact</a></div>
+                    <!-- <div class="link "><img src="elements\search.png" alt="searchbutton" width="25px" ></div> -->
+                    <div class="link text-link" onclick="closemenu()"><a>Login</a></div>
+                </nav>
+                
+                
+            </header>
+            <main>
+                <div class="text-image">
+                    <div class="text">
+                        <div class="grand">
+                            <h1 class="hedding-text transparent t1">Find work,</h1>
+                            <div class="underline underline-fix-first-title"></div>
+                        </div>          
+                        <div class="grand ">
+                            <h3 class="sub-hedding">connect with talented</h3>
+                            <h1 class="hedding-text position-fix transparent t1">freelancers,</h1>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="grand ">
+                            <h3 class="sub-hedding ">or scout out local and mobile</h3>
+                            <h1 class="hedding-text position-fix transparent t1">businesses.</h1>
+                            <div class="underline"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="image">
+                        <img class="hero-image" src="elements\heroimage.svg" alt="hero-image" width="570px">
+                    </div>
+                </div>
+                <div>
+                    <div class="search-bar-wrapper">
+                        <div class="search-bar">
+                            <label><p>Searching for</p>
+                             <input type="text" id="search-bar" name="search-bar" placeholder="Searching for Marketing, Food, Lawn care"></label>
+                            <label><p class="p-fix">Type</p>
+                                <select >
+                                    <option>Online</option>
+                                    <option>Offline</option>
+                                    <option>Physical</option>
+                                </select>
+                            </label>
+                            <div class="search-button">
+                                <div class="empty-space"></div>
+                                <input type="submit" value="Submit">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag-line">
+                        <img  src="elements\logo2.png" alt="logo" height="45px" >
+                        <p>your all inclusive service and employment platform.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script>
+            let menuOpen=document.getElementById("navigation-mob");
+
+            function openmenu(){
+                menuOpen.style.right="0";
+            }
+            function closemenu(){
+                menuOpen.style.right="-200px"
+            }
+            
+            
+        </script>
+        
+    </body>
+    
+</html>

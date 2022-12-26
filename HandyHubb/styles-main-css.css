@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+body{
+    background-color:#fbfbfb;
+    margin:0;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+
+html, body {
+    position:relative;
+    overflow-x:hidden;
+  }
+
+/* ------------overlay grid-------------- */
+
+
+.container{
+    margin:0 auto;
+    width: 75%;
+} 
+.header-container{
+    /* height:200px; */
+    padding-top: 30px;
+    display: flex;
+    /* background-color: antiquewhite; */
+    justify-content: space-between;
+    align-items:center;
+}
+.logo{
+    padding-left: 22px;
+    height:35px;
+}
+.menu-open{
+    display: none;
+}
+.navigation-web{
+    display: inline-flex;
+    align-items: center;
+    
+    /* gradient */
+    
+    background-image: linear-gradient(90deg, #567abf, #3ea9ca);
+   
+    background-clip: text;
+    -webkit-background-clip: text;
+   
+    height: 100%;
+    box-sizing:border-box;
+}
+.navigation-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    position: absolute;
+    top:0;
+    right: -200px; 
+    height: 100vh;
+    z-index: 10;
+    padding-top: 30px;
+    color:white;
+    background: #3ea9c4;
+    transition: right 0.5s;
+    
+
+}
+.navigation-mobile{
+    display: none;
+}
+
+.link button{
+    background-color: #48b7b4; 
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:30px;
+    
+    cursor: pointer;
+}
+.link button:hover{
+    transition-duration: 0.3s;
+    background-color: white;
+    color: #48b7b4;
+    border: 2px solid #48b7b4;
+    box-sizing: border-box;
+
+}
+.link{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    /* gradient */
+    
+}
+
+.link img{
+    padding-top:5px;
+}
+.button-log{
+    padding: 0;
+    width: 130px;
+}
+.gradient{
+    /* gradient */
+   
+    -webkit-text-fill-color: transparent;
+
+}
+.text-link{
+    
+    cursor: pointer;
+}
+.text-link:hover{
+    transition-duration: 0.3s;
+    color: #48b7b4;
+   
+    border-bottom: 5px solid #48b7b4;
+    border-radius: 3px;
+
+}
+
+/* ----------------image and text----------------------------- */
+
+.text-image{
+    cursor: default;
+    display:flex;
+  
+    justify-content: space-between;
+   
+    padding-top:32px;
+}
+
+.text{
+  
+    padding-top: 8px;
+    flex-basis: 460px;   
+}
+.hero-image{
+    width:570px;
+}
+.grand{
+    position: relative;
+    background-color: black;
+    background-image: linear-gradient(90deg, #8a3495,#3ea8cb, #52bba3);
+    background-size:100%;
+    background-clip: text; 
+    -webkit-background-clip: text; 
+}
+
+.sub-hedding{
+    position: absolute;
+    font-weight:400;
+    font-style: italic;
+    font-size: 34px;
+    letter-spacing: -1px;
+    margin: 0;
+    padding: 0 15px; 
+    height: 50px;
+    color: #064e69;
+}
+.hedding-text{
+    
+    font-weight: 700;
+    font-size: 85px;
+    margin: 0;
+    padding: 0 15px;    
+    height: 110px;
+    letter-spacing: -2.8px;
+    
+}
+.position-fix{
+    
+    padding-top: 22px;
+}
+
+.transparent{
+    -webkit-text-fill-color: transparent;
+}
+
+.underline{
+    position: absolute;
+   
+    top: 87px;
+    z-index: -20;
+    height: 38px;
+    width: 465px;
+    background-color: #f2f2f2;
+    background-image: linear-gradient(0deg, #f2f2f2, #fafafa);
+    border-radius: 20px;
+}
+.underline-fix-first-title{
+    top: 65px;
+}
+.t1{
+    cursor:pointer;
+}
+.t1:hover{
+    background-image: linear-gradient(90deg, #8a3495,#3ea8cb, #52bba3);
+    background-clip: text; 
+    -webkit-background-clip: text;
+    transform: scale(1.05);
+    -webkit-text-fill-color: transparent;
+    transition-duration: 0.4s;
+}
+/* ----------------search bar------------------ */
+.search-bar-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar{
+    display:flex;
+    padding-top: 20px;
+   
+    height: 78px;
+  
+    filter: drop-shadow(0px 0px 13px #13131308 );
+   
+}
+
+.search-button, label{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.search-bar p,.empty-space{
+    flex-basis: 28px;
+    font-style: italic;
+    padding: 3px 35px;
+    margin: 0;
+    display: block;
+    color: #8a8b8b;
+}
+.p-fix{
+    padding: 3px 12px !important;
+}
+.search-bar input[type=text]{
+    
+    width: 510px;
+    height: 70px;
+    font-size: 20px;
+    padding: 0 35px;
+    border-radius: 30px 0px 0 30px;
+    box-sizing: border-box;
+    border: none;
+    color:#8a8b8b;
+}
+.search-bar select{
+
+    cursor: pointer;
+   
+    /* background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSdibGFjaycgaGVpZ2h0PScyNCcgdmlld0JveD0nMCAwIDI0IDI0JyB3aWR0aD0nMjQnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZD0nTTcgMTBsNSA1IDUtNXonLz48cGF0aCBkPSdNMCAwaDI0djI0SDB6JyBmaWxsPSdub25lJy8+PC9zdmc+); */
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Some browsers will not display the caret when using calc, so we put the fallback first */ 
+  background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat 98.5% !important; /* !important used for overriding all other customisations */
+  background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat calc(100% - 15px) !important; /* Better placement regardless of input width */
+
+/*For IE*/
+
+
+    width: 250px;
+    height: 70px;
+    font-size: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border: none;
+    border-left: 3px solid #eaeaea;
+    color:#8a8b8b;
+    position: relative;
+    left: -4px;
+}
+select::-ms-expand { display: none; }   
+input[type=text]:focus {
+     outline:none;
+    /* outline-color: gray;  */
+    /* filter: drop-shadow(0px 0px 20px #13131308); */
+  }
+  select:focus {
+    /* outline-color: gray; */
+    outline:none;
+  }
+  .search-bar input[type=submit]{
+    display: inline;
+    width: 130px;
+    height: 70px;
+    font-size: 20px;
+    padding: 0 30px;
+    border-radius: 0px 30px 30px 0px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #004b80;
+    color:white;
+    position: relative;
+    left: -7px;
+    cursor: pointer;
+}
+.search-bar input[type=submit]:hover{
+    
+    background-color: #003b64;
+}
+/* --------------------------tag line----------------- */
+.tag-line{
+    display: flex;
+    height:40px;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.tag-line img{
+    height:32px;
+    display: inline-block;
+}
+.tag-line p{
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-style: italic;
+    color:#064e69;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
